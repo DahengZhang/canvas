@@ -29,5 +29,6 @@ export class Pen {
       const y = touches[0].clientY - this.dataStore.canvas.offsetTop;
       this.dataStore.ctx.lineTo(x, y);
       this.dataStore.ctx.stroke();
+      const dataUrl = this.dataStore.canvas.toDataURL('image/png'); // 将图片转换为base64格式
    }
 }

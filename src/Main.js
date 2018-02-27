@@ -16,7 +16,7 @@ export class Main {
         this.dataStore.ctx = this.ctx;
         // 初始化画板
         this.dataStore.canvas.width = window.innerWidth;
-        this.dataStore.canvas.height = window.innerHeight;
+        this.dataStore.canvas.height = window.innerHeight - 45;
 
         // 设置画笔
         this.dataStore
